@@ -1,11 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div>welcome to travel blog</div>
+  <nav class="navbar">
+      <a href="#" class="logo"> Travel<span class="half-logo">Blog.</span></a>
+      <div class="options">
+        <ul>
+          <li><a href="/travelblog/" class="nav-list">Home</a></li>
+          <li><a href="#" class="nav-list">Blog</a></li>
+          <li class="nav-item"><a href="#" class="nav-list">Destination <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown_menu">
+              <ul>
+                  <li><a href="#">Argentina</a></li>
+                  <li><a href="#">Europe</a></li>
+                  <li><a href="#">Chile</a></li>
+                  <li><a href="#">Spain</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#" class="nav-list">About</a></li>
+          <li><a href="#" class="nav-list">Contact</a></li>
+        </ul>
+  </nav>
+    <div class="content">
+      <section class="hero-section">
+        <h1>EXPLORE. DREAM. DISCOVER.</h1>
+        <p class="p1">
+          This is a world travel blog featuring beautiful destinations, new
+          experiences, and hidden places around the globe.
+        </p>
+        <p class="p2">Please tag along!</p>
+        <a href="#" class="explore-btn">Start Exploring</a>
+      </section>
+      <section class="second-section">
+        <div class="links-container">
+          <div class="link-box">
+            <a href="#">
+              <img src="assets/travel-blog.webp" alt="Travel Blog" />
+              <p>TRAVEL BLOG</p>
+            </a>
+          </div>
+          <div class="link-box">
+            <a href="#">
+              <img src="assets/destinations.jpeg" alt="Destinations" />
+              <p>DESTINATIONS</p>
+            </a>
+          </div>
+          <div class="link-box">
+            <a href="#">
+              <img src="assets/about.jpg" alt="About" />
+              <p>ABOUT</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://instagram.com" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://twitter.com" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://youtube.com" target="_blank"
+          ><i class="fab fa-youtube"></i
+        ></a>
+      </div>
+      <hr />
+      <p>© TravelBlog 2024</p>
+      <div class="footer-links">
+        <a href="#">Affiliate Disclosures</a> • <a href="#">Privacy Policy</a> •
+        <a href="#">Terms Of Use</a>
+      </div>
+    </footer>
   </body>
 </html>
