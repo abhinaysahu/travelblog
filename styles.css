@@ -70,6 +70,15 @@ html {
   width: 250px;
 }
 
+.link-box a{
+  text-decoration: none;
+}
+
+.link-box p:hover{
+  transition-duration: 0.3s;
+  color:rgb(202, 99, 14) ;
+}
+
 .link-box img {
   width: 300px;
   border-radius: 10px;
