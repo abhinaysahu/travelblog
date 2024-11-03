@@ -66,5 +66,14 @@ function loadComments() {
     comments.forEach(displayComment);
 }
 
+// Function to clear comments
+function clearComments() {
+    // Clear comments from localStorage
+    localStorage.removeItem('comments');
+    
+    // Clear the displayed comments on the page
+    document.getElementById('comments').innerHTML = '';
+}
+
 // Call loadComments when the page loads
 window.onload = loadComments;
