@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Signika Negative", sans-serif;
 }
 
 /* Blog- Post */
@@ -16,7 +17,7 @@
 }
 
 .background-image {
-  background-image: url('../assets/nitk-beach2.jpg'); /* Use your image path */
+  background-image: url("../assets/nitk-beach2.jpg"); /* Use your image path */
   background-size: cover;
   background-position: center;
   margin-top: 105px;
@@ -145,18 +146,17 @@
   color: #e67e22;
 }
 
-
 .safety-info {
-font-family: Arial, sans-serif;
-line-height: 1.6;
-width:100%;
-max-width: 1200px;
-margin: auto;
-padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
 }
 
 .safety-info h2 {
-font-size: 22px;
+  font-size: 22px;
   color: #e67e22;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -165,115 +165,114 @@ font-size: 22px;
 }
 
 .safety-info p {
-font-size: 16px;
-line-height: 1.6;
-color: #666;
-margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 15px;
 }
 
 .volcano-image {
-width: 100%;
-border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 figure {
-margin: 20px 0;
-text-align: center;
+  margin: 20px 0;
+  text-align: center;
 }
 
 figcaption {
-font-size: 0.9em;
-color: #666;
-margin-top: 5px;
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 5px;
 }
 
 /* comments */
-.main-comments{
-margin: 20px;
-width: 80%;
-max-width: 800px;
-margin-left: 160px;
+.main-comments {
+  margin: 20px;
+  width: 80%;
+  max-width: 800px;
+  margin-left: 160px;
 }
 .comment-section {
-margin-top: 20px;
+  margin-top: 20px;
 }
 .comment-box {
-border: 1px solid #ddd;
-padding: 10px;
-border-radius: 4px;
-background: #fff;
-margin-bottom: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  background: #fff;
+  margin-bottom: 10px;
 }
 .comment-box .user-icon {
-width: 50px;
-height: 50px;
-border-radius: 50%;
-background-color: #ddd;
-display: inline-block;
-margin-right: 10px;
-vertical-align: top;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
 }
 .comment-content {
-display: inline-block;
-vertical-align: top;
-max-width: calc(100% - 70px);
+  display: inline-block;
+  vertical-align: top;
+  max-width: calc(100% - 70px);
 }
-.name-and-email{
-display: flex;
+.name-and-email {
+  display: flex;
 }
 .comment-content .date {
-font-size: 0.9em;
-color: #666;
+  font-size: 0.9em;
+  color: #666;
 }
 .comment-content .text {
-margin-top: 5px;
-color: #333;
+  margin-top: 5px;
+  color: #333;
 }
 .comment-form {
-margin-top: 20px;
+  margin-top: 20px;
 }
 .comment-form textarea {
-width: 100%;
-height: 100px;
-padding: 10px;
-border: 1px solid #ddd;
-border-radius: 4px;
-margin-bottom: 10px;
-resize: none;
-font-size: 16px;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  resize: none;
+  font-size: 16px;
 }
 .comment-form input[type="text"],
 .comment-form input[type="email"] {
-width: 48%;
-padding: 10px;
-margin-bottom: 10px;
-border: 1px solid #ddd;
-border-radius: 4px;
-font-size: 16px;
+  width: 48%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
 }
 .comment-form input[type="text"] {
-margin-right: 4%;
+  margin-right: 4%;
 }
 .comment-form button {
-background-color: #333;
-color: #fff;
-padding: 10px 20px;
-border: none;
-border-radius: 4px;
-cursor: pointer;
-font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
 }
 .comment-form button:hover {
-background-color: #555;
+  background-color: #555;
 }
 
 .btn {
-display: flex;             /* Arrange items in a row */
-gap: 10px;                 /* Add some space between the buttons */
-justify-content: center; /* Align buttons to the start (left) */
-align-items: center;       /* Vertically align buttons in the middle */
+  display: flex; /* Arrange items in a row */
+  gap: 10px; /* Add some space between the buttons */
+  justify-content: center; /* Align buttons to the start (left) */
+  align-items: center; /* Vertically align buttons in the middle */
 }
-
 
 /* FontAwesome for social media icons */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
