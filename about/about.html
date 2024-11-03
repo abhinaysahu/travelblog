@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Travel Blog</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap"
       rel="stylesheet"
@@ -14,52 +15,81 @@
     <link rel="stylesheet" href="about-styles.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <a href="#" class="logo"> Travel<span class="half-logo">Blog.</span></a>
-      <div class="options">
-        <ul>
-          <li><a href="../index.html" class="nav-list">Home</a></li>
-          <li><a href="/blog/blog.html" class="nav-list">Blog</a></li>
-          <li class="nav-item"><a href="#" class="nav-list">Destination <i class="fas fa-caret-down"></i></a>
-            <div class="dropdown_menu">
-              <ul>
-                  <li><a href="#">Argentina</a></li>
-                  <li><a href="#">Europe</a></li>
-                  <li><a href="#">Chile</a></li>
-                  <li><a href="#">Spain</a></li>
-              </ul>
+    <div id="navbar"></div>
+
+    <div class="content">
+      <!-- About Section -->
+      <section class="about-hero-section">
+        <h1>Meet the Team</h1>
+        <p>
+          We are a group of friends passionate about traveling and discovering
+          new destinations. Let us share our journeys with you!
+        </p>
+      </section>
+
+      <!-- Team Member Profiles -->
+      <section class="team-section">
+        <div class="team-container">
+          <!-- Team Member 1 -->
+          <div class="team-member">
+            <img
+              src="../assets/kumar.jpg"
+              alt="Abhishek Kumar"
+              class="team-image"
+            />
+            <h2>Abhishek Kumar</h2>
+            <p>
+              Hi! I'm Abhishek Kumar, and I love finding hidden spots around the
+              world that most travelers overlook.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
             </div>
-          </li>
-          <li><a href="#" class="nav-list">About</a></li>
-          <li><a href="#" class="nav-list">Contact</a></li>
-        </ul>
-  </nav>
+          </div>
 
-  
+          <!-- Team Member 2 -->
+          <div class="team-member">
+            <img
+              src="../assets/parmar.jpg"
+              alt="Abhishek Parmar"
+              class="team-image"
+            />
+            <h2>Abhishek Parmar</h2>
+            <p>
+              Hi! I'm Abhishek Parmar, passionate about the food culture of
+              different regions and trying local delicacies wherever I go.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
 
-
-
-  <footer>
-    <div class="social-icons">
-      <a href="https://facebook.com" target="_blank"
-        ><i class="fab fa-facebook-f"></i
-      ></a>
-      <a href="https://instagram.com" target="_blank"
-        ><i class="fab fa-instagram"></i
-      ></a>
-      <a href="https://twitter.com" target="_blank"
-        ><i class="fab fa-twitter"></i
-      ></a>
-      <a href="https://youtube.com" target="_blank"
-        ><i class="fab fa-youtube"></i
-      ></a>
+          <!-- Team Member 3 -->
+          <div class="team-member">
+            <img
+              src="../assets/abhinay.jpg"
+              alt="Abhinay Sahu"
+              class="team-image"
+            />
+            <h2>Abhinay Sahu</h2>
+            <p>
+              Hi! I'm Abhinay, and I'm always up for an adventure, from hiking
+              mountains to diving deep into the sea.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    <hr />
-    <p>© TravelBlog 2024</p>
-    <div class="footer-links">
-      <a href="#">Affiliate Disclosures</a> • <a href="#">Privacy Policy</a> •
-      <a href="#">Terms Of Use</a>
-    </div>
-  </footer>
+
+    <div id="footer"></div>
+
+    <!-- Load the navbar and footer JavaScript -->
+    <script src="/js/main.js"></script>
   </body>
 </html>
