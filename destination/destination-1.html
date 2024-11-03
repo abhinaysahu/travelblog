@@ -1,104 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bali Travel Guide</title>
-  <link rel="stylesheet" href="/destination/destination-1.css">
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bali Travel Guide</title>
+    <link rel="stylesheet" href="/destination/destination-1.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  </head>
+  <body>
     <div id="navbar"></div>
 
+    <!-- Header Section -->
+    <header class="hero-section">
+      <img src="/assets/jaipur-scaled.jpg" alt="jaipur-image" />
+      <h1>BALI TRAVEL GUIDE</h1>
+      <p>
+        Complete tips for visiting Bali, Indonesia, the "Island of the Gods"
+      </p>
+    </header>
 
-  <!-- Header Section -->
-  <header class="hero-section">
-    <img src="/assets/jaipur-scaled.jpg" alt="jaipur-image">
-    <h1>BALI TRAVEL GUIDE</h1>
-    <p>Complete tips for visiting Bali, Indonesia, the "Island of the Gods"</p>
-  </header>
+    <!-- Overview Section -->
+    <div class="overview-section">
+      <h2 class="section-title">BALI TRAVEL GUIDE</h2>
+      <h3 class="overview-title">
+        Overview <span class="title-divider"></span>
+      </h3>
+      <p class="overview-paragraph">
+        Bali is a great destination for luxury seekers and budget travelers
+        alike. There's something for everyone on this island in Indonesia.
+      </p>
+      <p class="overview-paragraph">
+        Adventure lovers in Bali will have easy access to
+        <span>waterfalls</span>, jungles, cliffs, volcanoes, and more. Or, if
+        you're the more laid-back type, Bali has <span>beaches</span>,
+        <span>temples</span>, and rice terraces for you, along with an endless
+        supply of good restaurants and massages.
+      </p>
+      <p class="overview-paragraph">
+        If any of that sounds nice, then you'll fall in love with this island
+        and its people. Read through this complete Bali travel guide for more
+        info on what to expect!
+      </p>
+    </div>
 
-  <!-- Overview Section -->
-  <div class="overview-section">
-    <h2 class="section-title">BALI TRAVEL GUIDE</h2>
-    <h3 class="overview-title">Overview <span class="title-divider"></span></h3>
-    <p class="overview-paragraph">Bali is a great destination for luxury seekers and budget travelers alike. There's something for everyone on this island in Indonesia.</p>
-    <p class="overview-paragraph">Adventure lovers in Bali will have easy access to <span>waterfalls</span>, jungles, cliffs, volcanoes, and more. Or, if you're the more laid-back type, Bali has <span>beaches</span>, <span>temples</span>, and rice terraces for you, along with an endless supply of good restaurants and massages.</p>
-    <p class="overview-paragraph">If any of that sounds nice, then you'll fall in love with this island and its people. Read through this complete Bali travel guide for more info on what to expect!</p>
-  </div>
+    <div class="container">
+      <h2>Quick Facts</h2>
+      <div class="facts-grid">
+        <div class="fact">
+          <div class="icon">🌐</div>
+          <div class="info">
+            <h4>Language</h4>
+            <p>Indonesian, Balinese & English</p>
+          </div>
+        </div>
+        <div class="fact">
+          <div class="icon">🕉️</div>
+          <div class="info">
+            <h4>Religion</h4>
+            <p>Hinduism</p>
+          </div>
+        </div>
+        <div class="fact">
+          <div class="icon">💰</div>
+          <div class="info">
+            <h4>Currency</h4>
+            <p>Indonesian Rupiah (IDR)</p>
+          </div>
+        </div>
+        <div class="fact">
+          <div class="icon">✈️</div>
+          <div class="info">
+            <h4>Airport</h4>
+            <p>Ngurah Rai International (DPS)</p>
+          </div>
+        </div>
+        <div class="fact">
+          <div class="icon">🛂</div>
+          <div class="info">
+            <h4>Visa</h4>
+            <p>Visa free access or VOA for 160+ countries</p>
+          </div>
+        </div>
+        <div class="fact">
+          <div class="icon">☀️</div>
+          <div class="info">
+            <h4>Climate</h4>
+            <p>Tropical; warm & humid year round. Dry season is April - Nov</p>
+          </div>
+        </div>
+        <div class="fact">
+          <div class="icon">🔌</div>
+          <div class="info">
+            <h4>Power Plugs</h4>
+            <p>Type C / F</p>
+          </div>
+        </div>
+        <div class="fact">
+          <div class="icon">📱</div>
+          <div class="info">
+            <h4>Apps</h4>
+            <p>Grab, Go-Jek</p>
+          </div>
+        </div>
+      </div>
 
-  <div class="container">
-    <h2>Quick Facts</h2>
-    <div class="facts-grid">
-      <div class="fact">
-        <div class="icon">🌐</div>
-        <div class="info">
-          <h4>Language</h4>
-          <p>Indonesian, Balinese & English</p>
-        </div>
-      </div>
-      <div class="fact">
-        <div class="icon">🕉️</div>
-        <div class="info">
-          <h4>Religion</h4>
-          <p>Hinduism</p>
-        </div>
-      </div>
-      <div class="fact">
-        <div class="icon">💰</div>
-        <div class="info">
-          <h4>Currency</h4>
-          <p>Indonesian Rupiah (IDR)</p>
-        </div>
-      </div>
-      <div class="fact">
-        <div class="icon">✈️</div>
-        <div class="info">
-          <h4>Airport</h4>
-          <p>Ngurah Rai International (DPS)</p>
-        </div>
-      </div>
-      <div class="fact">
-        <div class="icon">🛂</div>
-        <div class="info">
-          <h4>Visa</h4>
-          <p>Visa free access or VOA for 160+ countries</p>
-        </div>
-      </div>
-      <div class="fact">
-        <div class="icon">☀️</div>
-        <div class="info">
-          <h4>Climate</h4>
-          <p>Tropical; warm & humid year round. Dry season is April - Nov</p>
-        </div>
-      </div>
-      <div class="fact">
-        <div class="icon">🔌</div>
-        <div class="info">
-          <h4>Power Plugs</h4>
-          <p>Type C / F</p>
-        </div>
-      </div>
-      <div class="fact">
-        <div class="icon">📱</div>
-        <div class="info">
-          <h4>Apps</h4>
-          <p>Grab, Go-Jek</p>
-        </div>
+      <div class="where-is-bali">
+        <h2>Where Is Bali?</h2>
+        <p>First things first -- where is Bali on the world map?</p>
+        <p>
+          Bali is a small island located in the country of
+          <strong>Indonesia</strong> (in Southeast Asia). Indonesia is made up
+          of more than 17,000 islands, and it's surrounded by
+          <strong>Malaysia</strong>, the <strong>Philippines</strong>, Papua New
+          Guinea, and Australia.
+        </p>
+        <p>
+          Bali is a fairly small island, located just to the right of
+          <strong>Java</strong>, the 5th largest island in Indonesia. These two
+          islands—Bali and Java—were connected by land in centuries past.
+        </p>
       </div>
     </div>
-    
-    <div class="where-is-bali">
-      <h2>Where Is Bali?</h2>
-      <p>First things first -- where is Bali on the world map?</p>
-      <p>Bali is a small island located in the country of <strong>Indonesia</strong> (in Southeast Asia). Indonesia is made up of more than 17,000 islands, and it's surrounded by <strong>Malaysia</strong>, the <strong>Philippines</strong>, Papua New Guinea, and Australia.</p>
-      <p>Bali is a fairly small island, located just to the right of <strong>Java</strong>, the 5th largest island in Indonesia. These two islands—Bali and Java—were connected by land in centuries past.</p>
-    </div>
-  </div>
-  
+    <div
+      id="map"
+      style="
+        height: 400px;
+        width: 60%;
+        margin-left: 40vh;
+        border-radius: 5px;
+        border-style: solid;
+      "
+    ></div>
 
-  <div id="footer"></div>
+    <div id="footer"></div>
 
-  <script src="/js/main.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+      // Bali coordinates
+      const baliCoords = [-8.3405, 115.092];
+
+      // Initialize map
+      const map = L.map("map").setView(baliCoords, 10);
+
+      // Set up the OSM tile layer
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map);
+
+      // Add a marker at Bali's location
+      L.marker(baliCoords).addTo(map).bindPopup("Bali, Indonesia").openPopup();
+    </script>
   </body>
 </html>
