@@ -46,14 +46,13 @@
   transition: all 0.2s ease;
 }
 
-.options ul li a:hover {
-  color: rgba(202, 99, 14, 0.961);
+.options ul li a {
+  color: grey;
+  text-decoration: none;
+  transition: all 0.2s ease;
 }
 
-.options ul li span {
-  cursor: default;
-}
-.options ul li span:hover {
+.options ul li a:hover {
   color: rgba(202, 99, 14, 0.961);
 }
 
