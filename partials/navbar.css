@@ -54,6 +54,7 @@
 
 .options ul li a:hover {
   color: rgba(202, 99, 14, 0.961);
+  transition-duration: 0.4s;
 }
 
 /* Destination */
