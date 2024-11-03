@@ -1,0 +1,156 @@
+@media only screen and (min-width: 1260px) {
+    .kingster-logo {
+        -webkit-box-shadow: 0px 11px 5px -1px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 11px 5px -1px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 11px 5px -1px rgba(0, 0, 0, 0.3);
+    }
+
+    .kingster-logo-inner {
+        max-width: 80% !important;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    .kingster-animate-fixed-navigation.kingster-header-style-plain .kingster-logo-inner, .kingster-animate-fixed-navigation.kingster-header-style-boxed .kingster-logo-inner {
+        max-width: 50% !important;
+    }
+
+    .kingster-animate-fixed-navigation.kingster-header-style-plain .kingster-logo {
+        padding: 10px;
+    }
+
+    .kingster-navigation {
+        padding-top: 25px !important;
+    }
+
+    .kingster-navigation .sf-menu > li > a {
+        padding-bottom: 25px;
+    !important;
+    }
+
+    .kingster-animate-fixed-navigation .kingster-navigation {
+        padding-top: 20px !important;
+    }
+
+    .kingster-animate-fixed-navigation .kingster-navigation .sf-menu > li > a {
+        padding-bottom: 20px;
+    !important;
+    }
+
+
+    .kingster-header-container {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        padding: 0px !important;
+        max-width: 100vw !important;
+    }
+
+    .kingster-header-style-plain.kingster-style-menu-right .kingster-logo {
+        float: none !important;
+    }
+
+    .kingster-header-style-plain.kingster-style-menu-right .kingster-navigation {
+        float: none !important;
+    }
+
+    .kingster-navigation {
+        text-align: center !important;
+    }
+
+    .nitk-title-image {
+        max-width: 80% !important;
+    }
+
+    object{
+        width: 70%;
+        height: 700px;
+    }
+
+    iframe{
+        width: 70%;
+        height: 700px;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .banner-buttons{
+        display: none !important;
+    }
+}
+
+.kingster-animate-fixed-navigation.kingster-header-style-plain .kingster-navigation .sf-menu > li > a, .kingster-animate-fixed-navigation.kingster-header-style-boxed .kingster-navigation .sf-menu > li > a {
+    padding-bottom: 15px !important;
+}
+
+.gdlr-core-opacity-on-hover{
+    background: none !important;
+}
+
+.kingster-top-bar{
+    padding-bottom: 14px !important;
+    padding-top: 12px !important;
+}
+#div_1dd7_0 {
+    box-shadow: 0 -6px 24px rgba(10, 10, 10, 0.25) !important;
+    -moz-box-shadow: 0 -6px 24px rgba(10, 10, 10, 0.25) !important;
+    -webkit-box-shadow: 0 -6px 24px rgba(10, 10, 10, 0.25) !important;
+    background-color: #ffffff !important;
+    border-radius: 3px 3px !important;
+    -moz-border-radius: 3px 3px !important;
+    -webkit-border-radius: 3px 3px !important;
+}
+
+.kingster-body{
+color: #292929 !important;
+}
+
+/* menu background colour */
+.sf-menu > .kingster-normal-menu li, .sf-menu > .kingster-mega-menu > .sf-mega, .sf-vertical ul.sub-menu li, ul.sf-menu > .menu-item-language li{
+    background-color: white !important;
+}
+.hover-shadow:hover {
+    box-shadow: 0 -6px 24px rgba(10, 10, 10, 0.25) !important;
+    -moz-box-shadow: 0 -6px 24px rgba(10, 10, 10, 0.25) !important;
+    -webkit-box-shadow: 0 -6px 24px rgba(10, 10, 10, 0.25) !important;
+    background-color: #ffffff !important;
+    border-radius: 3px 3px !important;
+    -moz-border-radius: 3px 3px !important;
+    -webkit-border-radius: 3px 3px !important;
+}
+
+.gdlr-core-event-item-list.gdlr-core-style-widget .gdlr-core-event-item-title {
+    margin-bottom: 10px !important;
+}
+
+.gdlr-core-blog-widget {
+    margin-bottom: 15px !important;
+}
+
+.kingster-breadcrumbs
+{
+    background: #d3d3d35c;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.kingster-body .kingster-breadcrumbs, .kingster-body .kingster-breadcrumbs a span, .gdlr-core-breadcrumbs-item, .gdlr-core-breadcrumbs-item a span{
+    color: #383838;
+}
+
+.gdlr-core-column-service-content {
+    color: #a8a8a8 !important;
+}
+
+.gdlr-core-column-service-read-more {
+    color: #3db166 !important;
+}
+
+object{
+    width: 100%;
+    height: 700px;
+}
+
+frame{
+    width: 100%;
+    height: 700px;
+}
