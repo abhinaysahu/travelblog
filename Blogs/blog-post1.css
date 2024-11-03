@@ -146,7 +146,53 @@
   color: #e67e22;
 }
 
+
+
+.safety-info {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  width:100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.safety-info h2 {
+  font-size: 22px;
+    color: #e67e22;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-left: 4px solid #e67e22;
+    padding-left: 10px;
+}
+
+.safety-info p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.volcano-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+figure {
+  margin: 20px 0;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* comments */
+
 .main-comments {
+
   margin: 20px;
   width: 80%;
   max-width: 800px;
@@ -213,7 +259,6 @@
   margin-right: 4%;
 }
 .comment-form button {
-  margin: 0px 50%;
   background-color: #333;
   color: #fff;
   padding: 10px 20px;
@@ -225,5 +270,17 @@
 .comment-form button:hover {
   background-color: #555;
 }
-/* FontAwesome for social media icons */
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+
+
+.btn {
+  display: flex;             /* Arrange items in a row */
+  gap: 10px;                 /* Add some space between the buttons */
+  justify-content: center; /* Align buttons to the start (left) */
+  align-items: center;       /* Vertically align buttons in the middle */
+}
+
+
+  /* FontAwesome for social media icons */
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+
+
