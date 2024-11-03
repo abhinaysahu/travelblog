@@ -1,0 +1,55 @@
+footer {
+    background-color: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    font-family: "Signika Negative", sans-serif;
+    font-size: 14px;
+  }
+  
+  .social-icons {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    color: #ccc;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  footer hr {
+    border: 0.5px solid #333;
+    margin: 10px 0;
+  }
+  
+  .footer-links {
+    margin: 10px 0;
+  }
+  
+  .footer-links a {
+    color: #ff6600; /* Customize the link color */
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .affiliate-text {
+    font-size: 12px;
+    color: #999;
+    max-width: 600px;
+    margin: 10px auto 0;
+    line-height: 1.5;
+  }
+  
+  .affiliate-text em {
+    font-style: italic;
+    color: #ff6600;
+  }
+  
+  /* FontAwesome for social media icons */
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+  
