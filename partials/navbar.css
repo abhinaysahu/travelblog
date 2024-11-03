@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    background: black;
+    color: #fff;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .logo {
+    margin-left: 10%;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  .half-logo {
+    color: rgba(202, 99, 14, 0.961);
+  }
+  
+  .options ul {
+    padding-left: 50%;
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+  }
+  
+  .options ul li {
+    font-family: "Signika Negative", sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+  }
+  
+  .options ul li a {
+    color: grey;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  
+  .options ul li a:hover {
+    color: rgba(202, 99, 14, 0.961);
+  }
+  
+  /* Destination */
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0 200px;
+    margin: 0;
+  }
+  
+  .navbar .nav-item {
+    position: relative;
+  }
+  
+  .nav-list {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+  }
+  
+  .navbar li {
+    position: relative;
+  }
+  
+  .dropdown_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 5px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .dropdown_menu ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .dropdown_menu li {
+    width: 100%;
+  }
+  
+  .dropdown_menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  .nav-item:hover .dropdown_menu {
+    display: block;
+  }
+  
+  .dropdown_menu li a:hover {
+    background-color: #444;
+    color: rgba(202, 99, 14, 0.961);
+  }
+  
+  .nav-list i {
+    margin-left: 5px;
+    color: rgba(202, 99, 14, 0.961);
+  }
+  
