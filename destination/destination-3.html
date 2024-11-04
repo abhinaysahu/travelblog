@@ -11,8 +11,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/destination/destination-2.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   </head>
   <body>
     <div id="navbar"></div>
@@ -111,22 +109,30 @@
     <div id="footer"></div>
 
     <script src="/js/main.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeKnPWcpThAlHYc5J4KdJLmfTEdzYcLbg&callback=initMap"
+      async
+      defer
+    ></script>
     <script>
-      // Shimla coordinates
-      const shimlaCoords = [31.1048, 77.1734];
+      // Initialize and add the map
+      function initMap() {
+        // The location of Bali
+        const shimla = { lat: 31.1048, lng: 77.1734 };
 
-      // Initialize map
-      const map = L.map("map").setView(shimlaCoords, 12);
+        // The map, centered at Bali
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 10,
+          center: shimla,
+        });
 
-      // Set up the OSM tile layer
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        maxZoom: 19,
-        attribution:
-          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      }).addTo(map);
-
-      // Add a marker at Shimla's location
-      L.marker(shimlaCoords).addTo(map).bindPopup("Shimla, India").openPopup();
+        // The marker, positioned at Bali
+        const marker = new google.maps.Marker({
+          position: shimla,
+          map: map,
+          title: "Shimla, India",
+        });
+      }
     </script>
   </body>
 </html>

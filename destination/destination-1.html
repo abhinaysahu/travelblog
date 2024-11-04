@@ -11,8 +11,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bali Travel Guide</title>
     <link rel="stylesheet" href="/destination/destination-1.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   </head>
   <body>
     <div id="navbar"></div>
@@ -118,22 +116,30 @@
     <div id="footer"></div>
 
     <script src="/js/main.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeKnPWcpThAlHYc5J4KdJLmfTEdzYcLbg&callback=initMap"
+      async
+      defer
+    ></script>
     <script>
-      // Bali coordinates
-      const baliCoords = [-8.3405, 115.092];
+      // Initialize and add the map
+      function initMap() {
+        // The location of Bali
+        const bali = { lat: -8.3405, lng: 115.092 };
 
-      // Initialize map
-      const map = L.map("map").setView(baliCoords, 10);
+        // The map, centered at Bali
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 10,
+          center: bali,
+        });
 
-      // Set up the OSM tile layer
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        maxZoom: 19,
-        attribution:
-          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      }).addTo(map);
-
-      // Add a marker at Bali's location
-      L.marker(baliCoords).addTo(map).bindPopup("Bali, Indonesia").openPopup();
+        // The marker, positioned at Bali
+        const marker = new google.maps.Marker({
+          position: bali,
+          map: map,
+          title: "Bali, Indonesia",
+        });
+      }
     </script>
   </body>
 </html>

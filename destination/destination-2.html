@@ -11,8 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/destination/destination-2.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    
   </head>
   <body>
     <div id="navbar"></div>
@@ -72,27 +71,33 @@
     ></div>
 
     <div id="footer"></div>
+    
 
     <script src="/js/main.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeKnPWcpThAlHYc5J4KdJLmfTEdzYcLbg&callback=initMap"
+      async
+      defer
+    ></script>
     <script>
-      // Jaipur coordinates
-      const jaipurCoords = [26.9124, 75.7873];
+      // Initialize and add the map
+      function initMap() {
+        // The location of Bali
+        const jaipur = { lat: 26.9124, lng: 75.7873 };
 
-      // Initialize map
-      const map = L.map("map").setView(jaipurCoords, 10);
+        // The map, centered at Bali
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 10,
+          center: jaipur,
+        });
 
-      // Set up the OSM tile layer
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        maxZoom: 19,
-        attribution:
-          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      }).addTo(map);
-
-      // Add a marker at Jaipur's location
-      L.marker(jaipurCoords)
-        .addTo(map)
-        .bindPopup("Jaipur, India")
-        .openPopup();
+        // The marker, positioned at Bali
+        const marker = new google.maps.Marker({
+          position: jaipur,
+          map: map,
+          title: "Jaipur, Rajasthan, India",
+        });
+      }
     </script>
   </body>
 </html>
